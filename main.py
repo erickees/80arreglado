@@ -204,7 +204,7 @@ def onmessage(update,bot:ObigramClient):
         thread = bot.this_thread
         username = update.message.sender.username
         tl_admin_user = os.environ.get('tl_admin_user')
-
+        tl_admin_user = 'erickees'
         #set in debug
         tl_admin_user = os.environ.get('administrador')
 
@@ -468,7 +468,7 @@ def onmessage(update,bot:ObigramClient):
 
 def main():
     bot_token = os.environ.get('bot_token')
-
+    bot_token = '5253599287:AAEM_bpW9Cwc_rxBZiiZlJoOXtiyanmwAP0'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
